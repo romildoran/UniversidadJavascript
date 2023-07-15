@@ -113,10 +113,10 @@ let eliminarEgreso = (id) => {
 }
 
 let agregarDato = () => {
-    let forma = document.forms['forma'];
-    let tipo = forma['tipo'];
-    let descripcion = forma['descripcion'];
-    let valor = forma['valor'];
+    let forma = document.querySelector('#forma');
+    let tipo = forma.querySelector('#tipo');
+    let descripcion = forma.querySelector('#descripcion');
+    let valor = forma.querySelector('#valor');
 
     if (descripcion.value !== '' && valor.value !== '') {
         if (tipo.value === 'ingreso') {

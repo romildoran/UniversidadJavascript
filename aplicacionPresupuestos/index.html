@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/aplicacionPresupuestos/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../aplicacionPresupuestos/css/styles.css">
     <title>Universidad JavaScript 2021</title>
 </head>
 
@@ -34,15 +34,15 @@
         </div>
     </div>
 
-    <div id="forma" onsubmit="return false;">
+    <div id="forma" name="forma" onsubmit="return false;">
         <div class="agregar">
             <div class="agregar_contenedor">
-                <select class='agregar_tipo' id='tipo'>
+                <select class="agregar_tipo" id="tipo" name="tipo">
                     <option value="ingreso" selected>Ingreso</option>
                     <option value="egreso">Egreso</option>
                 </select>
-                <input type="text" class="agregar_descripcion" placeholder="Agregar Descripcion" id="descripcion">
-                <input type="number" class="agregar_valor" placeholder="Valor" id="valor" step="any">
+                <input type="text" class="agregar_descripcion" placeholder="Agregar Descripcion" id="descripcion" name="descripcion">
+                <input type="number" class="agregar_valor" placeholder="Valor" id="valor" name="valor" step="any">
                 <button class="agregar_btn" onclick="agregarDato()">
                     <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </button>
@@ -66,10 +66,10 @@
     </div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="/aplicacionPresupuestos/js/Dato.js"></script>
-    <script src="/aplicacionPresupuestos/js/Ingreso.js"></script>
-    <script src="/aplicacionPresupuestos/js/Egreso.js"></script>
-    <script src="/aplicacionPresupuestos/js/app.js"></script>
+    <script src="../aplicacionPresupuestos/js/Dato.js"></script>
+    <script src="../aplicacionPresupuestos/js/Ingreso.js"></script>
+    <script src="../aplicacionPresupuestos/js/Egreso.js"></script>
+    <script src="../aplicacionPresupuestos/js/app.js"></script>
 </body>
 
 </html>
